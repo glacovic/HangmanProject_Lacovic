@@ -14,9 +14,9 @@ to allow for a maximum of 6 possible incorrect guesses (head, body, two arms, tw
   - If I have enough leftover time after creating that intital basic hangman game,
 I may try to include extra incorrect guesses (such as face, hat, shoes, or hands) or longer word lengths.
 
-4) Initial UML class diagrams
+3) Initial UML class diagrams
 
-5) Plan and estimate of effort
+4) Plan and estimate of effort
   - I plan to work on this project step by step as I learn more,
 and I will slowly build it over the next two months.
   - I am choosing to do this project individually,
