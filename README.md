@@ -6,7 +6,7 @@ Name: Gwen Lacovic
 
 2) Describe project:
   - I am trying to build a basic hangman game that will display
-a stickman figure, the number of incorrect guesses, and guessed letters with a GUI.
+a stickman figure, the number of incorrect guesses, and guessed letters with the use of a GUI.
   - I chose this project type because it interested me the most of the example list, 
 and I started thinking of what potential ways the game could be set up or look like.
   - I intend to limit the user entered word length to six letters or less,
