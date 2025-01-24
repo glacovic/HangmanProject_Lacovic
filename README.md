@@ -11,7 +11,7 @@ a stickman figure, the number of incorrect guesses, and guessed letters with the
 and I started thinking of what potential ways the game could be set up or look like.
   - I intend to limit the user entered word length to six letters or less,
 to allow for a maximum of 6 possible incorrect guesses (head, body, two arms, two legs).
-  - If I have enough leftover time after creating that intital basic hangman game,
+  - If I have enough leftover time after creating that initial basic hangman game,
 I may try to include extra incorrect guesses (such as face, hat, shoes, or hands) or longer word lengths.
 
 3) Initial UML class diagrams:
