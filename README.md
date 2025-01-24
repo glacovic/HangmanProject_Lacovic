@@ -1,8 +1,8 @@
 # Project_Lacovic
 1)
-  -Project name: Basic Hangman Game
-  -Team name: Super Stickman
-  -Name: Gwen Lacovic
+Project name: Basic Hangman Game
+  - Team name: Super Stickman
+  - Name: Gwen Lacovic
 
 2) Describe project:
   - I am trying to build a basic hangman game that will display
