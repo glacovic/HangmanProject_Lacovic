@@ -5,13 +5,12 @@
 - Name: Gwen Lacovic
 
 2) Describe project:
-  - I am trying to build a basic hangman game that will display
-a stickman figure, the number of incorrect guesses, and guessed letters with the use of a GUI.
+  - I am trying to build a basic hangman game that allows the player to enter a word of their choice and that will (with the use of a GUI) display the number of incorrect guesses, guessed letters, and a stickman figure that has an added part after each incorrect guess.
   - I chose this project type because it interested me most on the example list, 
 and I started thinking of what potential ways the game could be set up or look like.
   - I intend to limit the word length to six letters max,
 to allow for a maximum of 6 possible incorrect guesses (head, body, two arms, two legs).
-  - I will either make there be a randomly generated 6 letter word, allow the user to enter their own word, or try to make it so both options are possible for the game.
+  - I will give user the ability to enter their own word, and specify that it should be 6 letters or less. If possible, I may include the option to provide a randomly generated word for a single player version of the game, though I would only do that if I have enough time later on.
 
 3) Initial UML class diagrams:
 
