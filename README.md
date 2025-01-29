@@ -10,7 +10,7 @@
 and I started thinking of what potential ways the game could be set up or look like.
   - I intend to limit the word length to six letters max,
 to allow for a maximum of 6 possible incorrect guesses (head, body, two arms, two legs).
-  - I will give user the ability to enter their own word, and specify that it should be 6 letters or less. If possible, I may include the option to provide a randomly generated word for a single player version of the game, though I would only do that if I have enough time later on.
+  - The player will have the ability to enter their own word, and I will specify that it should be 6 letters or less. If possible, I may include the option to provide a randomly generated word for a single player version of the game, though I would only do that if I have enough time later on.
 
 3) Initial UML class diagrams:
 
