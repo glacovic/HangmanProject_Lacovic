@@ -1,7 +1,6 @@
 # Project_Lacovic
 1)
 - Project name: Basic Hangman Game
-- Team name: Super Stickman
 - Name: Gwen Lacovic
 
 2) Describe project:
