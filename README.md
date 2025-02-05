@@ -8,7 +8,7 @@
   - I chose this project type because it interested me most on the example list, 
 and I started thinking of what potential ways the game could be set up or look like.
   - I intend to make there be a maximum of 6 possible incorrect guesses (head, body, two arms, two legs).
-  - I will either make it so there are randomly chosen six-letter words for the game, or that the player will have the ability to enter their own word of 4 to 8 letters in length. If I am able to, I might make the option for both to be possible (randomly chosen for single-player, and user-entered for multiple player game).
+  - I will make it so there is either a randomly chosen six-letter word for the game, or that the player will have the ability to enter their own 4 to 8 letter long word. This option will be based on whether the player chooses a single player or multiplayer game at the start.
 
 3) Initial UML class diagrams:
 
