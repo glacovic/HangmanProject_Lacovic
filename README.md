@@ -4,7 +4,7 @@
 - Name: Gwen Lacovic
 
 2) Describe project:
-  - I am trying to build a basic hangman game that allows the player to enter a word of their choice and that will (with the use of a GUI) display the number of incorrect guesses, guessed letters, and a stickman figure that has an added part after each incorrect guess.
+  - I am trying to build a basic hangman game that will (with the use of a GUI) display the number of incorrect guesses, guessed letters, and a stickman figure that has an added part after each incorrect guess.
   - I chose this project type because it interested me most on the example list, 
 and I started thinking of what potential ways the game could be set up or look like.
   - I intend to make there be a maximum of 6 possible incorrect guesses (head, body, two arms, two legs).
