@@ -14,6 +14,6 @@
 4) Plan and estimate of effort:
   - I already started the code for this project, with a few classes and buttons for the start choice of single player or multiplayer.
   - I plan to work on this project step by step as I learn more,
-and I will slowly build it over the the rest of the semester.
+and I will slowly build it over the rest of the semester.
   - I am choosing to do this project individually,
 so I will be the only person contributing to the effort.
