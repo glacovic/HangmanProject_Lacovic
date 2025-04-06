@@ -8,9 +8,9 @@ Project Description:
   - At the start of game, there is choice of single player or multiplayer. Single player selects a randomly chosen six-letter word for the hangman game. Multiplayer has the option of entering a six-letter word in text field, or choosing word from one of the 18 buttons. 
 
 How to run/use application:
-- Open the "BasicHangmanGame" file folder.
-- Next open the "src/main/java" folder.
-- Then open the "com/mycompany/basichangmangame" folder after that.
-- The ".java" files are code for basic hangman game project.
-- (Specific .java file names: StartChoice, SinglePlayer, MultiPlayer, wordOptions, HangmanGame, GuessedLetter, CorrectLetter, WrongLetter).
+  - Open the "BasicHangmanGame" file folder.
+  - Next open the "src/main/java" folder.
+  - Then open the "com/mycompany/basichangmangame" folder after that.
+  - (Specific ".java" file names: StartChoice, SinglePlayer, MultiPlayer, wordOptions, HangmanGame, GuessedLetter, CorrectLetter, WrongLetter).
+
 
