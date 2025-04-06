@@ -1,4 +1,4 @@
-# Project_Lacovic
+# ProjectLacovic
 - Project name: Basic Hangman Game
 - Name: Gwen Lacovic
 
