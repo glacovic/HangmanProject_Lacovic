@@ -14,7 +14,7 @@ How to run/use application:
 - Specific .java file names: StartChoice, SinglePlayer, MultiPlayer, wordOptions, HangmanGame, GuessedLetter, CorrectLetter, WrongLetter.
 
 Other information:
-    - Look at User Manual for directions related to playing the hangman game itself
-    - Look at UML and Implementation Manual to understand relationships between classes
+- Look at User Manual for directions related to playing the hangman game itself
+- Look at UML and Implementation Manual to understand relationships between classes
 
 
