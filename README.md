@@ -13,5 +13,5 @@ How to run/use application:
 - Then open the "com/mycompany/basichangmangame" folder after that.
 - The .java files are my code for basic hangman game itself.
 - Open those files in java and run the project to play hangman game.
-- (Specific .java file names: StartChoice, SinglePlayer, MultiPlayer, wordOptions, HangmanGame, GuessedLetter, CorrectLetter, WrongLetter)
+- (Specific .java file names: StartChoice, SinglePlayer, MultiPlayer, wordOptions, HangmanGame, GuessedLetter, CorrectLetter, WrongLetter).
 
