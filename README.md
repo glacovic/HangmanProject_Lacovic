@@ -7,7 +7,6 @@ Project Description:
   - There is a maximum of 7 possible incorrect guesses (head outline, body, two arms, two legs, head fill) for the stickman figure.
   - At the start of game, there is choice of either single player or multiplayer. Single player selects a randomly chosen six-letter word for the hangman game. Multiplayer has the option of entering a six-letter word in the text field, or choosing provided word from one of the 18 buttons given. 
 
-
 How to run/use application:
 - Open the "BasicHangmanGame" file folder.
 - Next open the "src/main/java" folder.
