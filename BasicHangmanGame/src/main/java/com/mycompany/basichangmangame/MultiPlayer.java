@@ -34,9 +34,11 @@ public class MultiPlayer extends GridPane
     private TextField enterWord;
 
     //Buttons given for word options
-    private Button word1, word2, word3, word4, word5, word6;
-    private Button word7, word8, word9, word10, word11, word12;
-    private Button word13, word14, word15, word16, word17, word18;
+    private Button word1, word2, word3, word4, word5, word6, 
+            word7, word8, word9, word10, word11, word12, 
+            word13, word14, word15, word16, word17, word18;
+    
+    Button[] buttonArray = new Button[18];
     
     private Stage thirdStage;
     private Scene sceneThree;
@@ -66,6 +68,7 @@ public class MultiPlayer extends GridPane
         word1.setAlignment(Pos.CENTER);
         word1.setPrefWidth(100);
         word1.setPrefHeight(30);
+        buttonArray[0] = word1;
         
         word2 = new Button("banana");
         word2.setFont(font2);
@@ -74,6 +77,7 @@ public class MultiPlayer extends GridPane
         word2.setAlignment(Pos.CENTER);
         word2.setPrefWidth(100);
         word2.setPrefHeight(30);
+        buttonArray[1] = word2;
         
         word3 = new Button("lemons");
         word3.setFont(font2);
@@ -82,6 +86,7 @@ public class MultiPlayer extends GridPane
         word3.setAlignment(Pos.CENTER);
         word3.setPrefWidth(100);
         word3.setPrefHeight(30);
+        buttonArray[2] = word3;
         
         word4 = new Button("orange");
         word4.setFont(font2);
@@ -90,6 +95,7 @@ public class MultiPlayer extends GridPane
         word4.setAlignment(Pos.CENTER);
         word4.setPrefWidth(100);
         word4.setPrefHeight(30);
+        buttonArray[3] = word4;
         
         word5 = new Button("cheese");
         word5.setFont(font2);
@@ -98,6 +104,7 @@ public class MultiPlayer extends GridPane
         word5.setAlignment(Pos.CENTER);
         word5.setPrefWidth(100);
         word5.setPrefHeight(30);
+        buttonArray[4] = word5;
         
         word6 = new Button("cashew");
         word6.setFont(font2);
@@ -106,6 +113,7 @@ public class MultiPlayer extends GridPane
         word6.setAlignment(Pos.CENTER);
         word6.setPrefWidth(100);
         word6.setPrefHeight(30);
+        buttonArray[5] = word6;
         
         word7 = new Button("cookie");
         word7.setFont(font2);
@@ -114,6 +122,7 @@ public class MultiPlayer extends GridPane
         word7.setAlignment(Pos.CENTER);
         word7.setPrefWidth(100);
         word7.setPrefHeight(30);
+        buttonArray[6] = word7;
         
         word8 = new Button("raisin");
         word8.setFont(font2);
@@ -122,6 +131,7 @@ public class MultiPlayer extends GridPane
         word8.setAlignment(Pos.CENTER);
         word8.setPrefWidth(100);
         word8.setPrefHeight(30);
+        buttonArray[7] = word8;
         
         word9 = new Button("carrot");
         word9.setFont(font2);
@@ -130,6 +140,7 @@ public class MultiPlayer extends GridPane
         word9.setAlignment(Pos.CENTER);
         word9.setPrefWidth(100);
         word9.setPrefHeight(30);
+        buttonArray[8] = word9;
         
         word10 = new Button("potato");
         word10.setFont(font2);
@@ -138,6 +149,7 @@ public class MultiPlayer extends GridPane
         word10.setAlignment(Pos.CENTER);
         word10.setPrefWidth(100);
         word10.setPrefHeight(30);
+        buttonArray[9] = word10;
         
         word11 = new Button("butter");
         word11.setFont(font2);
@@ -146,6 +158,7 @@ public class MultiPlayer extends GridPane
         word11.setAlignment(Pos.CENTER);
         word11.setPrefWidth(100);
         word11.setPrefHeight(30);
+        buttonArray[10] = word11;
         
         word12 = new Button("pepper");
         word12.setFont(font2);
@@ -154,6 +167,7 @@ public class MultiPlayer extends GridPane
         word12.setAlignment(Pos.CENTER);
         word12.setPrefWidth(100);
         word12.setPrefHeight(30);
+        buttonArray[11] = word12;
         
         word13 = new Button("muffin");
         word13.setFont(font2);
@@ -162,6 +176,7 @@ public class MultiPlayer extends GridPane
         word13.setAlignment(Pos.CENTER);
         word13.setPrefWidth(100);
         word13.setPrefHeight(30);
+        buttonArray[12] = word13;
         
         word14 = new Button("waffle");
         word14.setFont(font2);
@@ -170,6 +185,7 @@ public class MultiPlayer extends GridPane
         word14.setAlignment(Pos.CENTER);
         word14.setPrefWidth(100);
         word14.setPrefHeight(30);
+        buttonArray[13] = word14;
         
         word15 = new Button("garlic");
         word15.setFont(font2);
@@ -178,6 +194,7 @@ public class MultiPlayer extends GridPane
         word15.setAlignment(Pos.CENTER);
         word15.setPrefWidth(100);
         word15.setPrefHeight(30);
+        buttonArray[14] = word15;
         
         word16 = new Button("citrus");
         word16.setFont(font2);
@@ -186,6 +203,7 @@ public class MultiPlayer extends GridPane
         word16.setAlignment(Pos.CENTER);
         word16.setPrefWidth(100);
         word16.setPrefHeight(30);
+        buttonArray[15] = word16;
         
         word17 = new Button("chives");
         word17.setFont(font2);
@@ -194,6 +212,7 @@ public class MultiPlayer extends GridPane
         word17.setAlignment(Pos.CENTER);
         word17.setPrefWidth(100);
         word17.setPrefHeight(30);
+        buttonArray[16] = word17;
         
         word18 = new Button("onions");
         word18.setFont(font2);
@@ -202,8 +221,9 @@ public class MultiPlayer extends GridPane
         word18.setAlignment(Pos.CENTER);
         word18.setPrefWidth(100);
         word18.setPrefHeight(30);
+        buttonArray[17] = word18;
         //18 buttons given as other word options for HangmanGame
-                
+     
         setAlignment(Pos.CENTER);
         setHgap(20);
         setVgap(20);
@@ -293,49 +313,18 @@ public class MultiPlayer extends GridPane
     //After user presses button, leads to HangmanGame class
     public void pressedButton(ActionEvent event)
     {
-        String gameWord;
+        String gameWord = "";
         //Word choice from button becomes gameWord
         
-        
-        //Determines which of the 18 buttons was pressed
-        //Six-letter word on one of the buttons becomes gameWord 
-        if (event.getSource() == word1)
-            gameWord = word1.getText();
-        else if (event.getSource() == word2)
-            gameWord = word2.getText();
-        else if (event.getSource() == word3)
-            gameWord = word3.getText();
-        else if (event.getSource() == word4)
-            gameWord = word4.getText();
-        else if (event.getSource() == word5)
-            gameWord = word5.getText();
-        else if (event.getSource() == word6)
-            gameWord = word6.getText();
-        else if (event.getSource() == word7)
-            gameWord = word7.getText();
-        else if (event.getSource() == word8)
-            gameWord = word8.getText();
-        else if (event.getSource() == word9)
-            gameWord = word9.getText();
-        else if (event.getSource() == word10)
-            gameWord = word10.getText();
-        else if (event.getSource() == word11)
-            gameWord = word11.getText();
-        else if (event.getSource() == word12)
-            gameWord = word12.getText();
-        else if (event.getSource() == word13)
-            gameWord = word13.getText();
-        else if (event.getSource() == word14)
-            gameWord = word14.getText();
-        else if (event.getSource() == word15)
-            gameWord = word15.getText();
-        else if (event.getSource() == word16)
-            gameWord = word16.getText();
-        else if (event.getSource() == word17)
-            gameWord = word17.getText();
-        else 
-            gameWord = word18.getText();   
-        
+        /* Determines which of the 18 buttons was pressed
+        Six-letter word on one of the buttons becomes gameWord */
+        int i;
+        for (i = 0; i < buttonArray.length; ++i) {
+            if (event.getSource() == buttonArray[i]) {
+                gameWord = buttonArray[i].getText();
+                break;
+            }
+        }
         
         //leads to thirdStage sceneThree (HangmanGame)
         thirdStage = new Stage();
