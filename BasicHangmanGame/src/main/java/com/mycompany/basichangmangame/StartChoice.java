@@ -80,7 +80,7 @@ public class StartChoice extends Application
     public void multiButtonPress(ActionEvent event)
     {
         secondStage = new Stage();
-        sceneTwo = new Scene(new MultiPlayer(), 750, 550);
+        sceneTwo = new Scene(new MultiPlayer(), 850, 550);
         secondStage.setTitle("Multiplayer");
         secondStage.setScene(sceneTwo);
         secondStage.show();

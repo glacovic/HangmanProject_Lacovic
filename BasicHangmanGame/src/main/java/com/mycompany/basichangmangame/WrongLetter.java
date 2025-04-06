@@ -35,12 +35,13 @@ public class WrongLetter extends GuessedLetter
     @Override
     public String newDisplay() 
     {
-        int i;
+        int i = 0;
         String incStr = "";
         int newLength = incLets.length() + 1;
         
         //Letter guess is added to string with incorrect letter guesses
-        for (i = 0; i < newLength; ++i) {
+        while (i < newLength) 
+        {
             if (i == newLength - 1) {
                 incStr += letterGuess + " ";
                 //Letter is added to end of display incorrect letters string
@@ -48,6 +49,7 @@ public class WrongLetter extends GuessedLetter
             else {
                 incStr += incLets.charAt(i);
             }
+            ++i;
         }
         
         return incStr;
