@@ -191,7 +191,7 @@ public class HangmanGame extends GridPane
                     //When display word is the same as gameWord
                     displayWord.setText(gameWord);
                     enterLabel.setText("GAME WON");
-                    confirm.setText("Word was guessed correctly");
+                    confirm.setText("Word was guessed correctly\nPress X to start game again");
                     //User wins after all letters in gameWord are guessed
                 }
                 else {
@@ -240,7 +240,7 @@ public class HangmanGame extends GridPane
                         //Game over when number of incorrect guesses is 7
                         displayWord.setText("Word was: " + gameWord);
                         enterLabel.setText("GAME LOST");
-                        confirm.setText("You failed to guess word");
+                        confirm.setText("You failed to guess word\nPress X to start game again");
                     }
                 }
             }

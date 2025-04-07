@@ -60,6 +60,10 @@ public class MultiPlayer extends GridPane
         enterWord.setAlignment(Pos.CENTER);
         //HangmanGame is started with word entered in TextField
         
+        Label goBack = new Label("(Press X to go back to start)");
+        goBack.setFont(font2);
+        GridPane.setHalignment(goBack, HPos.CENTER);
+        
         //OR player chooses word from one of the buttons
         word1 = new Button("apples");
         word1.setFont(font2);
@@ -234,6 +238,8 @@ public class MultiPlayer extends GridPane
         
         //TextField for user to enter six-letter word
         add(enterWord, 0, 1);
+        
+        add(goBack, 0, 2); //Lets user know how to go back
         
         //Buttons with other word choices for HangmanGame
         add(word1, 1, 0);

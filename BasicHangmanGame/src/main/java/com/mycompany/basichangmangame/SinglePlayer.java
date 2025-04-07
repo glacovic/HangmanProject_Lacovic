@@ -32,6 +32,7 @@ public class SinglePlayer extends GridPane
     {
         Font font1 = Font.font("Arial", FontWeight.BOLD, 22);
         Font font2 = new Font(24);
+        Font font3 = new Font("Arial", 20);
         
         //Prompts user to press the button to start game
         clickStart = new Label("Click button to play hangman --> ");
@@ -46,6 +47,10 @@ public class SinglePlayer extends GridPane
         startButton.setAlignment(Pos.CENTER);
         startButton.setPrefWidth(170);
         startButton.setPrefHeight(50);
+        
+        Label goBack = new Label("(Press X to go back to start)");
+        goBack.setFont(font3);
+        GridPane.setHalignment(goBack, HPos.CENTER);
                 
         setAlignment(Pos.CENTER);
         setHgap(10);
@@ -53,6 +58,7 @@ public class SinglePlayer extends GridPane
         
         add(clickStart, 0, 0);
         add(startButton, 1, 0);
+        add(goBack, 0, 1);
     }
     
     
