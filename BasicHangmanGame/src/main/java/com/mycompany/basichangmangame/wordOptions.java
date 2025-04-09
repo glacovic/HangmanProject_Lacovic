@@ -23,12 +23,17 @@ public class wordOptions
    
     public wordOptions()
     {
-        //Word options in wordList to randomly select one from
+        //Six-letter word options in wordList to randomly select one from
         String[] wordsList = {"apples", "banana", "lemons", "cheese", "orange",
                     "cashew", "raisin", "cookie", "barley", "butter", "garlic", 
-                    "hummus", "potato", "carrot", "sundae", "nibble", "pepper",
+                    "hummus", "potato", "carrot", "sundae", "bitter", "pepper",
                     "muffin", "waffle", "yogurt", "sauces", "relish", "spoons",
-                    "celery", "chives", "onions", "crunch", "citrus", "bitter"};
+                    "celery", "chives", "onions", "crunch", "citrus", "treats",
+                    "cereal", "bagels", "cherry", "coffee", "napkin", "pickle",
+                    "salami", "burger", "bucket", "smoked", "pearls", "turkey",
+                    "chucky", "noodle", "octopi", "puddle", "zigzag", "random",
+                    "sample", "nights", "ticket", "movies", "knight", "output",
+                    "record", "radios", "turtle", "tigers", "sharks", "pebble"};
         
         NUM_WORDS = wordsList.length;
         //Length of wordsList becomes number for random generate

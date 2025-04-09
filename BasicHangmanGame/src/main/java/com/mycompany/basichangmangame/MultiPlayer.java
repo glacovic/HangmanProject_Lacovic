@@ -50,7 +50,7 @@ public class MultiPlayer extends GridPane
         Font font2 = new Font("Arial", 20);
         
         //Prompts user to enter word or choose six-letter word from button
-        chooseWord = new Label("Enter or choose six-letter word: ");
+        chooseWord = new Label("Enter own six-letter word or press button: ");
         chooseWord.setFont(font1);
         GridPane.setHalignment(chooseWord, HPos.CENTER);
         
@@ -298,7 +298,7 @@ public class MultiPlayer extends GridPane
                     //leads to thirdStage sceneThree (HangmanGame)
                     thirdStage = new Stage();
                     HangmanGame game = new HangmanGame();
-                    sceneThree = new Scene(game, 925, 750);
+                    sceneThree = new Scene(game, 1000, 800);
                     
                     game.userWord(gameWord);
                     //gameWord is used as userWord parameter for HangmanGame
@@ -335,7 +335,7 @@ public class MultiPlayer extends GridPane
         //leads to thirdStage sceneThree (HangmanGame)
         thirdStage = new Stage();
         HangmanGame game = new HangmanGame();
-        sceneThree = new Scene(game, 925, 750);
+        sceneThree = new Scene(game, 1000, 800);
         
         game.userWord(gameWord);
         //gameWord is used as parameter for userWord method in HangmanGame

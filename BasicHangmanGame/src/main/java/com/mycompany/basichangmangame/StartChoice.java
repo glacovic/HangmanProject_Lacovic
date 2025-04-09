@@ -28,26 +28,27 @@ public class StartChoice extends Application
     @Override
     public void start(Stage primaryStage)
     {
-        Font font1 = Font.font("Arial", FontWeight.BOLD, 22);
+        Font font1 = Font.font("Arial", FontWeight.BOLD, 24);
         startText = new Text ("Choose game to start: ");
         startText.setFont(font1);
         //Prompts user to press "Single player" or "Multiplayer" button
         
-        Font font2 = new Font(18);
+        Font font2 = Font.font(22);
+        
         Button single = new Button("Single player");
         single.setStyle("-fx-background-color: lavender");
         single.setOnAction(this::singleButtonPress);
         single.setFont(font2);
-        single.setPrefWidth(130);
-        single.setPrefHeight(40);
+        single.setPrefWidth(170);
+        single.setPrefHeight(55);
         //"Single player" button, when pressed ActionEvent singleButtonPress
         
         Button multi = new Button("Multiplayer");
         multi.setStyle("-fx-background-color: powderBlue");
         multi.setOnAction(this::multiButtonPress);
         multi.setFont(font2);
-        multi.setPrefWidth(130);
-        multi.setPrefHeight(40);
+        multi.setPrefWidth(170);
+        multi.setPrefHeight(55);
         //"Multiplayer" button, when pressed ActionEvent multiButtonPress
         
         FlowPane pane = new FlowPane(startText, single, multi);
@@ -55,7 +56,7 @@ public class StartChoice extends Application
         pane.setHgap(20);
         pane.setStyle("-fx-background-color: lightPink");
         
-        Scene scene = new Scene(pane, 750, 450);
+        Scene scene = new Scene(pane, 825, 500);
         
         primaryStage.setTitle("Start Choice");
         primaryStage.setScene(scene);
@@ -70,7 +71,7 @@ public class StartChoice extends Application
     public void singleButtonPress(ActionEvent event)
     {
         secondStage = new Stage();
-        sceneTwo = new Scene(new SinglePlayer(), 750, 450);
+        sceneTwo = new Scene(new SinglePlayer(), 850, 525);
         secondStage.setTitle("Single player");
         secondStage.setScene(sceneTwo);
         secondStage.show(); 
@@ -80,7 +81,7 @@ public class StartChoice extends Application
     public void multiButtonPress(ActionEvent event)
     {
         secondStage = new Stage();
-        sceneTwo = new Scene(new MultiPlayer(), 850, 550);
+        sceneTwo = new Scene(new MultiPlayer(), 925, 550);
         secondStage.setTitle("Multiplayer");
         secondStage.setScene(sceneTwo);
         secondStage.show();

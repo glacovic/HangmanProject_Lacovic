@@ -30,9 +30,9 @@ public class SinglePlayer extends GridPane
     
     public SinglePlayer()
     {
-        Font font1 = Font.font("Arial", FontWeight.BOLD, 22);
-        Font font2 = new Font(24);
-        Font font3 = new Font("Arial", 20);
+        Font font1 = Font.font("Arial", FontWeight.BOLD, 24);
+        Font font2 = new Font(26);
+        Font font3 = new Font("Arial", 22);
         
         //Prompts user to press the button to start game
         clickStart = new Label("Click button to play hangman --> ");
@@ -45,7 +45,7 @@ public class SinglePlayer extends GridPane
         startButton.setStyle("-fx-background-color: lightYellow");
         startButton.setOnAction(this::startButtonPress);
         startButton.setAlignment(Pos.CENTER);
-        startButton.setPrefWidth(170);
+        startButton.setPrefWidth(180);
         startButton.setPrefHeight(50);
         
         Label goBack = new Label("(Press X to go back to start)");
@@ -75,7 +75,7 @@ public class SinglePlayer extends GridPane
         //leads to thirdStage sceneThree (HangmanGame)
         thirdStage = new Stage();
         HangmanGame game = new HangmanGame();
-        sceneThree = new Scene(game, 925, 750);
+        sceneThree = new Scene(game, 1000, 800);
         
         game.userWord(gameWord);
         //gameWord is used as parameter for userWord method in HangmanGame
