@@ -12,7 +12,7 @@ How to run/use application:
 - Next open the "src/main/java" folder.
 - Then open the "com/mycompany/basichangmangame" folder after that.
 - Specific .java file names: StartChoice, SinglePlayer, MultiPlayer, wordOptions, HangmanGame, GuessedLetter, CorrectLetter, WrongLetter.
-- (Look at User Manual for directions related to playing the hangman game itself)
-- (Look at UML and Implementation Manual to understand details of program)
+- (Look at "User_Manual" for directions related to playing the hangman game itself)
+- (Look at "UML_Project_Lacovic" and "Implementation_Manual" to understand details of program)
 
 
